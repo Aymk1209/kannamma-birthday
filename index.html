@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Kannamma</title>
+    <style>
+        body { margin: 0; padding: 0; background-color: #1a0a10; color: white; font-family: 'Georgia', serif; text-align: center; }
+        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+        .hidden { display: none; }
+        #start-btn { padding: 15px 30px; font-size: 1.2rem; cursor: pointer; border: none; border-radius: 25px; background: #ff4d6d; color: white; }
+        .content-container { padding: 50px 20px; }
+        img, video { max-width: 90%; border-radius: 15px; margin: 20px 0; box-shadow: 0 0 20px rgba(255, 77, 109, 0.5); }
+        h1 { font-size: 3rem; color: #ff85a1; }
+        p { font-size: 1.2rem; line-height: 1.6; max-width: 600px; margin: 20px auto; }
+    </style>
+</head>
+<body>
+
+    <!-- Entrance Section -->
+    <div id="entrance" class="hero">
+        <h1>For My Kannamma</h1>
+        <button id="start-btn">Click to Open Your Gift</button>
+    </div>
+
+    <!-- Main Birthday Section -->
+    <div id="main-content" class="hidden">
+        <h1>Happy 23rd Birthday!</h1>
+        
+        <!-- REPLACE THIS WITH YOUR VIDEO FILE -->
+        <video width="640" controls>
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <p>You are more than just my best friend—you are my family. Thank you for caring for me like a mother, standing by me like a sister, and being my truest friend through it all.</p>
+        
+        <!-- REPLACE THIS WITH YOUR PHOTO -->
+        <img src="your-photo.jpg" alt="Beautiful Kannamma">
+
+        <p>I am so grateful for your trust, your guidance, and your unwavering belief in me. You make my world brighter every single day. I promise to always stand by your side, through every high and low, just as you have done for me.</p>
+        
+        <p><strong>With love, <br>Yogimann</strong></p>
+    </div>
+    <div class="bg-quotes">
+    <p>Best Friends Forever</p>
+    <p>Always Together</p>
+    <p>My Kannamma</p>
+    </div>
+    
+    <div class="heart" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="heart" style="left: 30%; animation-delay: 2s;"></div>
+    <div class="heart" style="left: 50%; animation-delay: 4s;"></div>
+    <div class="heart" style="left: 70%; animation-delay: 1s;"></div>
+    <div class="heart" style="left: 90%; animation-delay: 3s;"></div>
+    
+    <div class="main-card">
+        <div class="bunnies">🐰 🐰</div>
+        <div class="cake-icon">🍰</div>
+        <h1>Happy 23rd Birthday!</h1>
+        <p>You are more than just my best friend—you are family...</p>
+        </div>
+
+    <!-- Audio element (Uncomment and add path) -->
+    <!-- <audio id="bg-music" src="song.mp3" loop></audio> -->
+
+    <script>
+        const btn = document.getElementById('start-btn');
+        const entrance = document.getElementById('entrance');
+        const content = document.getElementById('main-content');
+        const audio = document.getElementById('bg-music');
+
+        btn.addEventListener('click', () => {
+            entrance.style.display = 'none';
+            content.classList.remove('hidden');
+            // if(audio) audio.play(); // Uncomment to play music
+        });
+    </script>
+</body>
+</html>
